@@ -4,6 +4,7 @@
 
 //https://youtu.be/t2CEgPsws3U?t=544
 
+// Step 1: Implement using regular array operations
 let letters = [];
 
 const word = "racecar";
@@ -26,8 +27,8 @@ if (rword === word) {
 	console.log(`${word} is not a palindrome`);
 }
 
-// Create a stack implementation
-var Stack = function() {
+// Step 2: Create our own custom stack implementation
+var MyStack = function() {
 	this.count = 0;
 	this.storage = {};
   
@@ -59,7 +60,7 @@ var Stack = function() {
 	}
 }
 
-var myStack = new Stack();
+var myStack = new MyStack();
 
 myStack.push(1);
 myStack.push(2);
