@@ -2,8 +2,6 @@
 
 // https://jsconsole.com/
 
-//https://youtu.be/t2CEgPsws3U?t=544
-
 // Step 1: Implement using regular array operations
 let letters = [];
 
