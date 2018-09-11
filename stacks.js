@@ -1,5 +1,7 @@
 /* Stacks */
 
+/* First in last out */
+
 // https://jsconsole.com/
 
 // Step 1: Implement using regular array operations
@@ -26,7 +28,7 @@ if (rword === word) {
 }
 
 // Step 2: Create our own custom stack implementation
-var MyStack = function() {
+const MyStack = function() {
 	this.count = 0;
 	this.storage = {};
   
@@ -43,8 +45,10 @@ var MyStack = function() {
 		}
 
 		this.count--;
-		var result = this.storage[this.count];
+
+		const result = this.storage[this.count];
 		delete this.storage[this.count];
+
 		return result;
 	}
 	
@@ -58,7 +62,7 @@ var MyStack = function() {
 	}
 }
 
-var myStack = new MyStack();
+const myStack = new MyStack();
 
 myStack.push(1);
 myStack.push(2);
